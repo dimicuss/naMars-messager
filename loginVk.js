@@ -1,5 +1,5 @@
 module.exports = function(number, pass, appId) {
-    var VK = require('vk');
+    var VK = require('./node_modules/vk');
     var vk = new VK.API(appId, 'all', '5.53');
 
     var login = vk.login(number, pass);
