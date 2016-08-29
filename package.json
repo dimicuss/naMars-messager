@@ -1,0 +1,24 @@
+{
+  "name": "naMars-messenger",
+  "version": "1.0.0",
+  "description": "Бот, переадресующий сообщения для студии naMars.",
+  "main": ".#messegesVk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimicuss/naMars-messager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimicuss/naMars-messager/issues"
+  },
+  "homepage": "https://github.com/dimicuss/naMars-messager",
+  "dependencies": {
+    "vk": "git+https://github.com/thepheer/vk.git"
+  }
+}
