@@ -1,4 +1,4 @@
-const foo = require('./vkApi')({
+var foo = require('./vkApi')({
     accessToken: '', 
 });
 //                ^
