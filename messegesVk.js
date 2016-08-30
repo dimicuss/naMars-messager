@@ -2,9 +2,9 @@
 
 module.exports = function (config) {
     var request     = require('request');
-    var sendTo      = require('./loginVk')(config.number,
-					   config.pass,
-					   config.appId)
+    var sendTo      = require('./loginVk')( config.number,
+					    config.pass,
+					    config.appId )
     var baseUrl     = 'https://api.vk.com/method/';
     var version     = '5.53';
     var accessToken = config.accessToken;
@@ -28,7 +28,7 @@ module.exports = function (config) {
 	
 	messageText = 'Ваше сообщение: ' + messageText;
 	
-	request.post(reqUrl, function(err, res, body) { 
+	request.post( reqUrl, function(err, res, body) { 
 	    if (!err && res.statusCode == 200) {
 		sendTo(messageSender, messageText, messageHeader);
 		return
@@ -109,6 +109,7 @@ module.exports = function (config) {
 	    accessToken;
 	
 	console.log('==== Посылка запроса на получение ключа ====');
+	
 	request.get( reqUrl, function(err, res, key) {
 	    if (!err && res.statusCode == 200) {
 		key = JSON.parse(key);
